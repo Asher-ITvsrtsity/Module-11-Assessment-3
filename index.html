@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Blog</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap-theme.min.css">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body onload="init">
+    <div class="d-flex flex-column align-items-center p-3 bg-white border-bottom shadow">
+        <img src="img/mini-blog-logo.png" height="40">
+        <nav>
+            <a class="p-2 text-dark" id="getLatest" href="#">Latest</a>
+            <a class="p-2 text-dark" id="getAll" href="#">All</a>
+            <a class="p-2 text-dark" id="getPopular" href="#">Popular</a>
+        </nav>
+    </div>
+
+    <div class="blog-header mx-auto text-center">
+        <h1>Is it Beautiful?</h1>
+        <p class="lead">All the latest <strong><em>tech</em></strong>, <strong><em>design</em></strong> and <strong><em>development</em></strong> news from around the world</p>
+    </div>
+    
+    <div class="container team">
+        <img src="img/andile.jpg" class="img-thumbnail rounded-circle" width="90">
+        <img src="img/bob.jpg" class="img-thumbnail rounded-circle" width="90">
+        <img src="img/dave.jpg" class="img-thumbnail rounded-circle" width="90">
+        <img src="img/jane.jpg" class="img-thumbnail rounded-circle" width="90">
+        <img src="img/john.jpg" class="img-thumbnail rounded-circle" width="90">
+        <img src="img/lee.jpg" class="img-thumbnail rounded-circle" width="90">
+        <img src="img/lungi.jpg" class="img-thumbnail rounded-circle" width="90">
+        <img src="img/sally.jpg" class="img-thumbnail rounded-circle" width="90">
+        <img src="img/thandi.jpg" class="img-thumbnail rounded-circle" width="90">
+    </div>
+
+    <div class="row container mx-auto">
+        <div class="column" id="posts">
+            Loading content...
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        var rootPath;
+
+        function init(){
+            rootPath = "https://mysite.itvarsity.org/api/mini-blog/";
+            document.getElementById("getAll").addEventListener('click', getAllPosts);
+        }
+
+        function getAllPosts(){
+            category = "getAll";
+            console.log(category);
+            //fetch all posts in category
+            //set the "all" to active
+        }
+    </script>
+</body>
+
+</html>
