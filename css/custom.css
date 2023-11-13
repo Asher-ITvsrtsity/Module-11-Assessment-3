@@ -29,3 +29,19 @@ html{
     white-space: nowrap;
     margin-bottom: 2rem;
 }
+
+.card{
+    min-width: 220px;
+}
+
+.card-text{
+    padding-top: 1rem;
+}
+
+.card-block{
+    min-height: 220px;
+}
+
+.active{
+    border-bottom: 1px solid black;
+}
